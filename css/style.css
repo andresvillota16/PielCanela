@@ -93,6 +93,11 @@ header nav img {
     align-items: center;
 }
 
+.nuestra-empresa h1 {
+    font-size: 35px;
+    color: whitesmoke;
+}
+
 .historia {
     display: flex;
     justify-content: center;
@@ -100,10 +105,7 @@ header nav img {
     padding: 20px;
 }
 
-.historia div {
-    width: 50%;
-    margin: 50px;
-}
+
 
 .historia img {
     width: 600px;
@@ -150,6 +152,120 @@ header nav img {
     align-items: center;
 }
 
+
+.talla img {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 40vh;
+    margin: 5px;
+    margin-left: 70px;
+
+}
+
+.promociones {
+    width: 100%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 500px 500px;
+    gap: 10px;
+    justify-content: center;
+}
+
+.promociones .promocion-tallas {
+    position: relative;
+
+}
+
+.promociones .promocion-tallas h1 {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.199);
+    width: 100%;
+    padding: 5px;
+}
+
+.promociones .promocion-tallas img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: -11px 0px 29px 21px rgba(35, 35, 35, 0.6);
+    -webkit-box-shadow: -11px 0px 29px 21px rgba(35, 35, 35, 0.6);
+    -moz-box-shadow: -11px 0px 29px 21px rgba(35, 35, 35, 0.6);
+}
+
+.promociones div h1 {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.199);
+    padding: 5px;
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.promociones-general {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 400px 400px 400px;
+    column-gap: 25px;
+    row-gap: 100px;
+    padding: 50px;
+}
+
+.promociones-general .trajes-promocion img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.promociones-general .trajes-promocion h2 {
+    font-size: 18px;
+}
+
+.promociones-general .trajes-promocion .tachar h3 {
+    font-size: 16px;
+    text-decoration-line: line-through;
+    display: inline-block;
+    margin: 5px;
+}
+
+
+.trajes-promocion .tachar span {
+    color: red;
+}
+
+
+.blog {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 400px 400px;
+    column-gap: 25px;
+    row-gap: 100px;
+    padding: 50px;
+}
+
+.blog .blog-pielcanela img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 5px;
+}
+
+.blog .blog-pielcanela h1 {
+    font-size: 20px;
+}
+
+.blog .blog-pielcanela h2 {
+    font-size: 15px;
+}
+
 .tv img {
     width: 450px;
     height: 550px;
@@ -162,14 +278,14 @@ header nav img {
     margin: 50px;
 }
 
-.tv h1 {
+.tv div h1 {
     font-size: 25px;
     text-align: center;
     color: chocolate;
 }
 
 
-.tv p {
+.tv div p {
     font-size: 20px;
     text-align: center;
 }
@@ -186,13 +302,13 @@ header nav img {
     margin: 50px;
 }
 
-.moda h1 {
+.moda div h1 {
     font-size: 25px;
     color: chocolate;
     text-align: center;
 }
 
-.moda p {
+.moda div p {
     font-size: 20px;
     text-align: center;
 }
@@ -214,13 +330,13 @@ header nav img {
     margin: 50px;
 }
 
-.nuestroequipo h1 {
+.nuestroequipo div h1 {
     font-size: 25px;
     color: chocolate;
     text-align: center;
 }
 
-.nuestroequipo p {
+.nuestroequipo div p {
     font-size: 20px;
 }
 
@@ -250,7 +366,7 @@ header nav img {
     justify-content: center;
 }
 
-.menu div img {
+.menu .trajes img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -270,12 +386,12 @@ header nav img {
     padding: 50px;
 }
 
-.galeria-tienda h2 {
+.galeria-tienda .tienda-trajes h2 {
     font-size: 15px;
 }
 
 
-.galeria-tienda div img {
+.galeria-tienda .tienda-trajes img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -285,20 +401,20 @@ header nav img {
     position: relative;
 }
 
-.galeria-tienda div img h2 {
-    margin: 10px;
+.galeria-tienda .tienda-trajes h3 {
+    font-size: 20px;
 }
 
 
 
 
 
-.trajes {
+.menu .trajes {
     position: relative;
 }
 
 
-.trajes h3 {
+.menu .trajes h3 {
     position: absolute;
     bottom: 0;
     color: white;
@@ -340,14 +456,14 @@ header nav img {
 
 }
 
-.nueva div img {
+.ultimos-diseños div img {
     width: 250px;
     height: 300px;
     padding: 10px;
     padding: 10px 20px 10px 20px;
 }
 
-.nueva div h3 {
+.ultimos-diseños div h3 {
     margin-top: 0;
     font-size: 20px;
 }
@@ -357,21 +473,23 @@ header nav img {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+    margin: 5px;
 }
 
-.domicilio div {
+.domicilio .ciudades {
     width: 50%;
     margin: 50px;
 }
 
-.domicilio div h2 {
+.domicilio .ciudades h2 {
     font-size: 35px;
     text-align: center;
     font-style: italic;
 }
 
-.domicilio div h3 {
-    font-size: 20px;
+.domicilio .ciudades h3 {
+    font-size: 25px;
     text-align: center;
 }
 
@@ -402,8 +520,8 @@ header nav img {
 
 .informacion div {
     border: 5px solid rgb(121, 59, 6);
-    ;
-    background-color: rgba(255, 127, 80, 0.274)
+
+    background-color: rgba(255, 127, 80, 0.274);
 }
 
 
@@ -444,44 +562,12 @@ header nav img {
 }
 
 
-.domicilio {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    margin: 5px;
-}
-
-.domicilio div {
-    width: 50%;
-    margin: 50px;
-}
-
-.domicilio .ciudades h2 {
-    font-size: 35px;
-    text-align: center;
-    font-style: italic;
-    margin-bottom: 10px;
-}
-
-.domicilio .ciudades h3 {
-    font-size: 25px;
-    text-align: center;
-}
-
-
-.domicilio div img {
-    width: 500px;
-    height: 400px;
-}
-
-
-
 /*----------------------FOOTER-----------------*/
 
 
 footer {
     background-color: bisque;
+    margin-top: 30px;
 }
 
 .informacion-contacto {
@@ -501,18 +587,15 @@ footer {
     padding: 10px;
 }
 
-.informacion-contacto h3 {
+.informacion-contacto a h3 {
     color: black;
     padding: 10px;
     font-size: 15px;
     margin: 0;
 }
 
-footer {
-    margin-top: 30px;
-}
 
-footer .redes {
+.redes {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -542,7 +625,7 @@ footer .redes {
         flex-direction: column;
     }
 
-    .domicilio div {
+    .domicilio .ciudades {
         width: 80%;
         text-align: center;
         margin: 0;
@@ -697,7 +780,7 @@ footer .redes {
         font-size: 25px;
     }
 
-    .nueva div img {
+    .nueva .ultimos-diseños img {
         width: 200px;
         height: 250px;
     }
@@ -718,7 +801,7 @@ footer .redes {
 
     }
 
-    .nueva div h3 {
+    .nueva .ultimos-diseños div h3 {
         font-size: 15px;
     }
 
@@ -746,10 +829,6 @@ footer .redes {
     .historia p {
         margin: 10px;
         width: 90vh;
-
-    }
-
-    .historia p {
         font-size: 18px;
         text-align: start;
     }
@@ -830,22 +909,22 @@ footer .redes {
 }
 
 @media screen and (max-width: 741px) {
-    .moda h1 {
+    .moda div h1 {
         font-size: 23px;
         text-align: center;
     }
 
-    .moda p {
+    .moda div p {
         font-size: 18px;
         text-align: start;
     }
 
-    .tv h1 {
+    .tv div h1 {
         font-size: 23px;
         text-align: center;
     }
 
-    .tv p {
+    .tv div p {
         font-size: 18px;
         text-align: start;
     }
@@ -999,35 +1078,35 @@ footer .redes {
 
 
 @media screen and (max-width: 500px) {
-    .tv div h1{
+    .tv div h1 {
         font-size: 20px;
         text-align: center;
     }
 
-    .tv div p{
+    .tv div p {
         font-size: 15px;
         text-align: start;
     }
 
-    .tv img{
+    .tv img {
         width: 250px;
         height: 350px;
         padding-bottom: 20px;
     }
 
-    .moda img{
+    .moda img {
         width: 250px;
         height: 250px;
     }
 }
 
 @media screen and (max-width: 390px) {
-    .historia img{
+    .historia img {
         width: 300px;
         height: 200px;
     }
 
-    .nuestroequipo img{
+    .nuestroequipo img {
         margin: 10px;
     }
 }

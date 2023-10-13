@@ -1,0 +1,508 @@
+/*-------------------MEDIAQUERY---------------------------*/
+
+@media screen and (max-width: 933px) {
+    .galeria-tienda {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 450px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .menu {
+        grid-template-columns: 280px 280px;
+        grid-template-rows: 280px 280px;
+    }
+}
+
+@media screen and (max-width: 872px) {
+    .domicilio {
+        flex-direction: column;
+    }
+
+    .domicilio .ciudades {
+        width: 80%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .domicilio div img {
+        width: 400px;
+        height: 400px;
+        justify-content: center;
+
+    }
+
+    .servicio ul li {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 854px) {
+    .fondo h2 {
+        font-size: 70px;
+    }
+
+    .fondo p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .informacion div h2 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .informacion div h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 793px) {
+    .informacion div h2 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .informacion div h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 769px) {
+    .domicilio .ciudades h2 {
+        font-size: 30px;
+    }
+
+    .domicilio .ciudades h3 {
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width: 660px) {
+    .galeria-tienda {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 400px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .domicilio .ciudades h2 {
+        font-size: 25px;
+    }
+
+    .domicilio .ciudades h3 {
+        font-size: 18px;
+    }
+
+    .domicilio div img {
+        width: 300px;
+        height: 300px;
+        justify-content: center;
+        padding: 0;
+
+    }
+}
+
+@media screen and (max-width: 577px) {
+    .menu {
+        grid-template-columns: 250px 250px;
+        grid-template-rows: 250px 250px;
+    }
+}
+
+@media screen and (max-width: 567px) {
+    .fondo h2 {
+        font-size: 60px;
+    }
+
+    .fondo p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .servicio ul li {
+        font-size: 10px;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .menu {
+        grid-template-columns: 230px 230px;
+        grid-template-rows: 230px 230px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .galeria-tienda {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 400px;
+    }
+}
+
+@media screen and (max-width: 495px) {
+    .servicio ul li {
+        font-size: 10px;
+        margin: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .menu {
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 200px 200px;
+    }
+}
+
+@media screen and (max-width: 418px) {
+    .menu {
+        grid-template-columns: 200px;
+        grid-template-rows: 200px 200px 200px 200px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .nueva h2 {
+        font-size: 25px;
+    }
+
+    .nueva .ultimos-diseños div img {
+        width: 200px;
+        height: 250px;
+    }
+
+    .nueva .ultimos-diseños div:hover {
+        box-shadow: 49px -13px 65px -10px rgba(0, 0, 0, 0.46);
+        -webkit-box-shadow: 49px -13px 65px -10px rgba(0, 0, 0, 0.46);
+        -moz-box-shadow: 49px -13px 65px -10px rgba(0, 0, 0, 0.46);
+
+    }
+
+    .nueva .ultimos-diseños div {
+        width: 200px;
+        height: 300px;
+        box-shadow: 10px 11px 22px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 11px 22px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 11px 22px 0px rgba(0, 0, 0, 0.75);
+
+    }
+
+    .nueva .ultimos-diseños div h3 {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 357px) {
+    .domicilio div img {
+        width: 300px;
+        height: 250px;
+        justify-content: center;
+        margin-left: -20px;
+
+
+    }
+}
+
+
+@media screen and (max-width: 915px) {
+    .historia {
+        flex-direction: column;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .historia p {
+        margin: 10px;
+        width: 90vh;
+        font-size: 18px;
+        text-align: start;
+
+    }
+
+
+    .historia img {
+        width: 500px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .equipo {
+        flex-direction: column;
+    }
+
+    .equipo div {
+        margin: 10px;
+        width: 90vh;
+    }
+
+    .equipo div h1 {
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .equipo div p {
+        font-size: 18px;
+        text-align: start;
+    }
+
+    .equipo img {
+        width: 400px;
+        height: 500px;
+        padding: 5px 0 30px 0;
+    }
+
+    .tv img {
+        width: 350px;
+        height: 500px;
+        margin: 10px;
+    }
+
+    .moda img {
+        width: 400px;
+        height: 400px;
+        margin: 10px;
+    }
+
+    .nuestroequipo {
+        flex-direction: column-reverse;
+        margin: 5px;
+    }
+
+    .nuestroequipo div {
+        margin: 10px;
+        width: 90vh;
+    }
+
+    .nuestroequipo div h1 {
+        font-size: 23px;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .nuestroequipo div p {
+        font-size: 18px;
+        text-align: start;
+        margin: 5px;
+    }
+
+    .aprender h1 {
+        font-size: 18px;
+    }
+
+    .aprender h2 {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 741px) {
+    .moda div h1 {
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .moda div p {
+        font-size: 18px;
+        text-align: start;
+    }
+
+    .tv div h1 {
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .tv div p {
+        font-size: 18px;
+        text-align: start;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .historia img {
+        width: 400px;
+        height: 300px;
+    }
+
+    .equipo img {
+        width: 300px;
+        height: 400px;
+    }
+
+    .tv img {
+        width: 300px;
+        height: 400px;
+    }
+
+    .moda img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .nuestroequipo img {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .equipo div p {
+        font-size: 15px;
+        text-align: start;
+    }
+
+    .nuestroequipo div p {
+        font-size: 15px;
+        text-align: start;
+        margin: 5px;
+    }
+
+    .aprender h1 {
+        margin: 15px;
+    }
+
+    .aprender h2 {
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width: 602px) {
+    .equipo div p {
+        font-size: 12px;
+        text-align: start;
+        margin: 5px;
+    }
+
+    .nuestroequipo div p {
+        font-size: 12px;
+        text-align: start;
+        margin: 5px;
+    }
+
+    .historia p {
+        font-size: 15px;
+        text-align: start;
+        margin: 5px;
+    }
+
+    .tv {
+        flex-direction: column-reverse;
+    }
+
+    .tv div {
+        margin: 5px;
+    }
+
+    .moda {
+        flex-direction: column;
+    }
+
+    .moda div h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .moda div p {
+        font-size: 15px;
+        text-align: start;
+    }
+
+    .moda div {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 593px) {
+    .historia {
+        padding: 0;
+        margin: 0;
+    }
+
+    .historia p {
+        width: 80%;
+        height: 100%;
+    }
+
+    .historia img {
+        width: 350px;
+        height: 250px;
+        margin: 10px;
+    }
+}
+
+
+@media screen and (max-width: 588px) {
+    .historia {
+        padding: 0;
+        margin: 0;
+    }
+
+    .historia p {
+        width: 80%;
+        height: 100%;
+    }
+
+    .nuestroequipo div {
+        width: 80%;
+        margin: 0;
+        text-align: start;
+    }
+
+
+
+    .equipo div {
+        width: 80%;
+        margin: 0;
+        text-align: start;
+    }
+
+    .nuestroequipo img {
+        width: 300px;
+        height: 200px;
+
+    }
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .tv div h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .tv div p {
+        font-size: 15px;
+        text-align: start;
+    }
+
+    .tv img {
+        width: 250px;
+        height: 350px;
+        padding-bottom: 20px;
+    }
+
+    .moda img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .historia img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .nuestroequipo img {
+        margin: 10px;
+    }
+}

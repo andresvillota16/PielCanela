@@ -1,0 +1,548 @@
+/*-------------------INDEX---------------------------*/
+
+
+.fondo {
+    width: 100%;
+    height: 80vh;
+    color: $color-terciario;
+    text-align: center;
+    background-image: url(../img/chica-playa2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    flex-direction: column;
+    @extend %flex-center;
+
+    h2 {
+        font-size: 80px;
+        font-family: serif;
+        font-style: italic;
+        padding: 20px;
+    }
+
+    p {
+        font-size: nth($font-size, 3);
+        margin-bottom: 50px;
+        padding: 30px;
+    }
+}
+
+.menu {
+    width: 100%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 500px 500px;
+    gap: 10px;
+    justify-content: center;
+    transition-property: img;
+    transition-duration: 15s;
+    transition-timing-function: ease-in;
+    transition-delay: 2s;
+
+    .trajes {
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            box-shadow: -11px 0px 29px 21px rgba(35, 35, 35, 0.6);
+            -webkit-box-shadow: -11px 0px 29px 21px rgba(35, 35, 35, 0.6);
+            -moz-box-shadow: -11px 0px 29px 21px rgba(35, 35, 35, 0.6);
+
+            &:hover {
+                width: 450px;
+                height: 450px;
+                position: relative;
+                font-size: 20px;
+            }
+        }
+
+        h3 {
+            position: absolute;
+            bottom: 0;
+            color: $color-terciario;
+            background-color: rgba(0, 0, 0, 0.199);
+            width: 100%;
+            padding: 5px;
+        }
+    }
+
+}
+
+
+.nueva {
+
+    transition-property: h2, color;
+    transition-duration: 5s;
+    transition-timing-function: ease;
+    transition-delay: 2s;
+    transition: 2s;
+
+    h2 {
+        text-align: center;
+        color: $color-principal;
+        background-color: blanchedalmond;
+        font-size: nth($font-size, 4);
+        margin: 80px 20px 20px 20px;
+
+        &:hover {
+            font-size: 40px;
+            color: coral;
+        }
+    }
+
+    .ultimos-diseños {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        div {
+            width: 250px;
+            height: 350px;
+            text-align: center;
+            margin: 35px;
+            box-shadow: 10px 11px 22px 0px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 10px 11px 22px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 10px 11px 22px 0px rgba(0, 0, 0, 0.75);
+
+            &:hover {
+                box-shadow: 49px -13px 65px -10px rgba(0, 0, 0, 0.46);
+                -webkit-box-shadow: 49px -13px 65px -10px rgba(0, 0, 0, 0.46);
+                -moz-box-shadow: 49px -13px 65px -10px rgba(0, 0, 0, 0.46);
+                transform: scale(1.2);
+            }
+
+            img {
+                width: 250px;
+                height: 300px;
+                padding: 10px;
+                padding: 10px 20px 10px 20px;
+            }
+
+            h3 {
+                margin-top: 0;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.domicilio {
+    @extend %flex-center;
+    padding: 20px;
+    margin: 5px;
+
+    .ciudades {
+        width: 50%;
+        margin: 50px;
+
+        h2 {
+            font-size: nth($font-size, 5);
+            text-align: center;
+            font-style: italic;
+        }
+
+        h3 {
+            font-size: nth($font-size, 3);
+            text-align: center;
+        }
+    }
+
+    div {
+        img {
+            width: 500px;
+            height: 400px;
+            margin-top: 50px;
+            padding: 0;
+        }
+    }
+}
+
+.informacion {
+    width: 100%;
+    height: 80vh;
+    color: $color-terciario;
+    text-align: center;
+    background-image: url("../img/mujeres-g.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        border: 5px solid rgb(121, 59, 6);
+
+        background-color: rgba(255, 127, 80, 0.274);
+
+        h2 {
+            font-size: 50px;
+            font-family: serif;
+            font-style: italic;
+            padding: 30px;
+        }
+
+        h3 {
+            font-size: nth($font-size, 4);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.servicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+
+    ul {
+        display: flex;
+        list-style: none;
+        text-align: center;
+
+        li {
+            margin: 5px;
+            font-size: 25px;
+            font-style: italic;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+    }
+}
+
+
+/*-------------------TIENDA---------------------------*/
+
+.trajes-baño {
+    width: 100%;
+    height: 20vh;
+    color: $color-terciario;
+    background-image: url("../img/fondo-tienda.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: 30px;
+    }
+}
+
+.galeria-tienda {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 450px 450px 450px 450px;
+    column-gap: 25px;
+    row-gap: 100px;
+    padding: 50px;
+
+    .tienda-trajes {
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h2 {
+            font-size: 15px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+    }
+}
+
+/*-------------------CONOCENOS---------------------------*/
+
+.nuestra-empresa {
+    width: 100%;
+    height: 20vh;
+    color: $color-terciario;
+    background-image: url("../img/fondo-tienda.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: empresa 4s;
+
+    h1 {
+        font-size: 35px;
+        color: whitesmoke;
+        @keyframes empresa {
+            from{
+                margin-left: 100%;
+                width:300%;
+            }
+            to{
+                margin-left: 0;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.historia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    img {
+        width: 600px;
+        height: 400px;
+        border-radius: 15px;
+    }
+
+    p {
+        text-align: center;
+        margin: 10px;
+        font-size: 20px;
+    }
+}
+
+.equipo {
+    @extend %flex-center;
+
+    div {
+        width: 50%;
+        margin: 50px;
+
+        h1 {
+            font-size: 25px;
+            color: $color-principal;
+            text-align: center;
+        }
+
+        p {
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+
+    img {
+        width: 500px;
+        height: 600px;
+    }
+}
+
+.tv {
+    @extend %flex-center;
+
+    img {
+        width: 450px;
+        height: 550px;
+        border-radius: 15px;
+    }
+
+    div {
+        width: 50%;
+        margin: 50px;
+
+        h1 {
+            font-size: 25px;
+            text-align: center;
+            color: $color-principal;
+        }
+
+        p {
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+}
+
+.moda {
+    @extend %flex-center;
+
+    div {
+        width: 50%;
+        margin: 50px;
+
+        h1 {
+            font-size: 25px;
+            color: $color-principal;
+            text-align: center;
+        }
+
+        p {
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+
+    img {
+        width: 500px;
+        height: 400px;
+        border-radius: 15px;
+    }
+}
+
+.nuestroequipo {
+    @include flex (flex, center, center);
+
+    img {
+        width: 500px;
+        height: 400px;
+        border-radius: 15px;
+    }
+
+    div {
+        width: 50%;
+        margin: 50px;
+
+        h1 {
+            font-size: 25px;
+            color: $color-principal;
+            text-align: center;
+        }
+
+        p {
+            font-size: 20px;
+
+        }
+    }
+}
+
+.aprender {
+    h1 {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 15px;
+    }
+}
+
+/*-------------------PROMOCION---------------------------*/
+
+.talla {
+    img {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        height: 40vh;
+        margin: 5px;
+        margin-left: 70px;
+
+    }
+}
+
+.promociones {
+    width: 100%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 500px 500px;
+    gap: 10px;
+    justify-content: center;
+
+    .promocion-tallas {
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            box-shadow: -11px 0px 29px 21px rgba(35, 35, 35, 0.6);
+            -webkit-box-shadow: -11px 0px 29px 21px rgba(35, 35, 35, 0.6);
+            -moz-box-shadow: -11px 0px 29px 21px rgba(35, 35, 35, 0.6);
+        }
+
+        h1 {
+            position: absolute;
+            bottom: 0;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.199);
+            width: 100%;
+            padding: 5px;
+            font-size: 20px;
+
+            span {}
+        }
+    }
+}
+
+.promociones-general {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 400px 400px 400px;
+    column-gap: 25px;
+    row-gap: 100px;
+    padding: 50px;
+
+    .trajes-promocion {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h2 {
+            font-size: 18px;
+        }
+
+        .tachar {
+            h3 {
+                font-size: 16px;
+                text-decoration-line: line-through;
+                display: inline-block;
+                margin: 5px;
+
+                span {
+                    color: rgb(231, 74, 74);
+                }
+            }
+        }
+
+    }
+}
+
+/*-------------------BLOG---------------------------*/
+
+.blog {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 400px 400px;
+    column-gap: 25px;
+    row-gap: 100px;
+    padding: 70px;
+
+    .blog-pielcanela {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+
+        h2 {
+            font-size: 15px;
+        }
+    }
+}
