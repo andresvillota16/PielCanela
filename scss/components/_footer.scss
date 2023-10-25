@@ -3,43 +3,58 @@
 footer {
     background: rgb(245, 202, 145);
     background: linear-gradient(27deg, rgba(245, 202, 145, 1) 0%, rgba(220, 171, 94, 1) 41%, rgba(254, 213, 164, 1) 100%);
-    margin-top: 30px;
-}
 
-
-.informacion-contacto {
-    display: flex;
-    padding: 10px;
-    justify-content: space-between;
-    flex-direction: column;
-    margin: 0;
-    text-decoration: none;
-
-    h2 {
-        color: $color-secundario;
-        font-size: 20px;
-        font-style: italic;
-        padding: 10px;
-    }
-
-    a {
-        h3 {
-            color: $color-secundario;
-            padding: 10px;
-            font-size: 15px;
-            margin: 0;
-        }
-    }
-
-    .redes {
+    .informacion-contacto {
         display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex-direction: row-reverse;
-        margin-top: -85px;
-        padding: 10px;
-        gap: 20px;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 0;
+        margin-left: 25px;;
 
-        a {}
+        h1 {
+            color: $color-secundario;
+            font-size: 20px;
+            font-style: italic;
+            padding: 10px;
+            margin-top: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+
+            h2 {
+                color: $color-secundario;
+                padding: 10px;
+                font-size: 20px;
+                margin: 0;
+                &:hover{
+                    color: red;
+                    font-size: 22px;
+                }
+            }
+        }
+
+        .redes {
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: row-reverse;
+
+            }
+            a {}
+
+            img {
+                margin: 0;
+                margin-top: -95px;
+                padding: 10px;
+                gap: 20px;
+                &:hover{
+                    width: 64px;
+                    height: 64px;
+            }
+
+        }
     }
 }

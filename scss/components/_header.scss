@@ -13,3 +13,32 @@ header nav img {
     margin: 0;
 }
 
+.navbar-collapse {
+    flex-grow: 0;
+    margin: 15px;
+    margin-right: 40px;
+}
+
+.navbar-nav{
+    column-gap: 30px;
+}
+
+.navbar-toggler{
+  color: black;
+  background-color: $color-principal;
+}
+
+.navbar-toggler-icon{
+    color: $color-principal;
+}
+
+.navbar-nav .nav-link{
+    &:hover{
+        color: $color-principal;
+        font-size: 25px;
+    }
+}
+
+.navbar-collapse{
+    margin-top: 0;
+}
